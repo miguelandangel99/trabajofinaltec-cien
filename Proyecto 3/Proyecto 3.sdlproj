@@ -1,0 +1,241 @@
+<?xml version="1.0"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="8c0b74dd-8959-43b7-98fa-4fcf4b91a09a" SettingsBundleGuid="c6e18c2a-b4da-4999-9cd6-d83d97bf7595" Version="4.0.0.0" Owner="DESKTOP-1DBG60K\migue" ProjectTemplateGuid="10004f3b-4acf-4425-a3e3-38d3b3514276" ReferenceProjectGuid="00000000-0000-0000-0000-000000000000">
+  <LanguageDirections>
+    <LanguageDirection Guid="fb1ba21a-f25e-4826-a047-488680ab601a" SettingsBundleGuid="54b5ad4d-4479-4368-b3fb-722721571ef9" TargetLanguageCode="es-x-mo-SDL" SourceLanguageCode="en-us">
+      <AutoSuggestDictionaries />
+      <CascadeItem OverrideParent="false" StopSearchingWhenResultsFound="false" />
+    </LanguageDirection>
+  </LanguageDirections>
+  <TermbaseConfiguration>
+    <Termbases>
+      <Name>Data Base - Traducción científico-técnica</Name>
+      <SettingsXml>&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;TermbaseSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;Path&gt;C:\Users\migue\Documents\SDL\SDL MultiTerm\Termbases\Nueva base terminológica.sdltb&lt;/Path&gt;
+  &lt;IsOpen&gt;false&lt;/IsOpen&gt;
+  &lt;Filter&gt;0&lt;/Filter&gt;
+  &lt;FilterHighlight&gt;false&lt;/FilterHighlight&gt;
+  &lt;Layout&gt;0&lt;/Layout&gt;
+  &lt;Local&gt;true&lt;/Local&gt;
+  &lt;IsCustom&gt;false&lt;/IsCustom&gt;
+&lt;/TermbaseSettings&gt;</SettingsXml>
+      <Enabled>true</Enabled>
+    </Termbases>
+    <LanguageIndexMappings>
+      <Language>en-us</Language>
+      <Index>English</Index>
+    </LanguageIndexMappings>
+    <LanguageIndexMappings>
+      <Language>es-x-mo-SDL</Language>
+      <Index>Spanish</Index>
+    </LanguageIndexMappings>
+    <RecognitionOptions>
+      <ShowWithNoAvailableTranslation>false</ShowWithNoAvailableTranslation>
+      <MinimumMatchValue>70</MinimumMatchValue>
+      <SearchDepth>200</SearchDepth>
+      <SearchOrder>Parallel</SearchOrder>
+    </RecognitionOptions>
+  </TermbaseConfiguration>
+  <SettingsBundles>
+    <SettingsBundle Guid="c6e18c2a-b4da-4999-9cd6-d83d97bf7595">
+      <SettingsBundle>
+        <SettingsGroup Id="TerminologyProviderSettings">
+          <Setting Id="TermbasesOrder">
+            <ArrayOfstring xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+              <string>Data Base - Traducción científico-técnica</string>
+            </ArrayOfstring>
+          </Setting>
+          <Setting Id="Termbases">
+            <ArrayOfTermbase xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Sdl.ProjectApi.Implementation.Xml">
+            </ArrayOfTermbase>
+          </Setting>
+        </SettingsGroup>
+        <SettingsGroup Id="SourceContentSettings">
+          <Setting Id="AllowSourceEditing">True</Setting>
+          <Setting Id="AllowMergeAcrossParagraphs">False</Setting>
+        </SettingsGroup>
+        <SettingsGroup Id="FileViewServiceSettings">
+          <Setting Id="SelectedTargetLanguageCode">es-x-mo-SDL</Setting>
+        </SettingsGroup>
+        <SettingsGroup Id="Plugin.AnyTM.SourceLanguages">
+          <Setting Id="HasMixedSourceLanguages">False</Setting>
+          <Setting Id="AutoDetectSourceLanguage">True</Setting>
+          <Setting Id="SourceLanguages">en-us</Setting>
+        </SettingsGroup>
+      </SettingsBundle>
+    </SettingsBundle>
+  </SettingsBundles>
+  <InitialTaskTemplate Description="ComplexTask_Prepare_NoProjectTM_Description" Name="ComplexTask_Prepare_NoProjectTM_Name" Id="Sdl.ProjectApi.AutomaticTask.Prepare.NoProjectTM">
+    <SubTaskTemplates>
+      <SubTaskTemplate TaskTemplateId="Sdl.ProjectApi.AutomaticTasks.Conversion" />
+      <SubTaskTemplate TaskTemplateId="Sdl.ProjectApi.AutomaticTasks.Split" />
+      <SubTaskTemplate TaskTemplateId="Sdl.ProjectApi.AutomaticTasks.PerfectMatch" />
+      <SubTaskTemplate TaskTemplateId="Sdl.ProjectApi.AutomaticTasks.Translate" />
+      <SubTaskTemplate TaskTemplateId="Sdl.ProjectApi.AutomaticTasks.Analysis" />
+    </SubTaskTemplates>
+  </InitialTaskTemplate>
+  <AnalysisBands>
+    <AnalysisBand MinimumMatchValue="50" />
+    <AnalysisBand MinimumMatchValue="75" />
+    <AnalysisBand MinimumMatchValue="85" />
+    <AnalysisBand MinimumMatchValue="95" />
+  </AnalysisBands>
+  <ManualTaskTemplates />
+  <Users>
+    <User UserId="DESKTOP-1DBG60K\migue" FullName="Miguel Ángel Horcajuelo Samaniego" Description="" Email="miguelangelhorcajuelosamaniego@gmail.com" PhoneNumber="664862829" EmailType="Smtp" />
+  </Users>
+  <CascadeItem OverrideParent="true" StopSearchingWhenResultsFound="false">
+    <CascadeEntryItem PerformConcordanceSearch="true" Penalty="0" PerformUpdate="true" PerformNormalSearch="true">
+      <MainTranslationProviderItem Uri="anytm.sdltm.file:///C:/Users/migue/Documents/Studio%202019/Translation%20Memories/atorvastatine40FR-atorvastatina40ES.sdltm" Enabled="true" />
+    </CascadeEntryItem>
+    <CascadeEntryItem PerformConcordanceSearch="true" Penalty="0" PerformUpdate="false" PerformNormalSearch="true">
+      <MainTranslationProviderItem Uri="sdltm.file:///C:/Users/migue/Desktop/TMprospecto.sdltm" Enabled="true" />
+    </CascadeEntryItem>
+  </CascadeItem>
+  <GeneralProjectInfo DueDate="2020-01-09T17:00:00Z" IsInPlace="false" StartedAt="2019-12-16T15:10:48.9569998Z" IsImported="false" Description="" Name="Proyecto 3" Status="Started" CreatedBy="DESKTOP-1DBG60K\migue" CreatedAt="2019-12-16T15:07:18.2103714Z">
+    <Customer Guid="c0e50d36-e75d-4f17-91b4-aa2579a8273d" Name="Iván Martínez" Email="ivan.martinez@ua.es" />
+  </GeneralProjectInfo>
+  <SourceLanguageCode>en-us</SourceLanguageCode>
+  <ProjectFiles>
+    <ProjectFile Guid="948a7669-5c8d-41c5-995d-92e4fb3c66d6" Path="" Role="Translatable" Name="ppfcientificotecnica.docx" ParentProjectFileGuid="00000000-0000-0000-0000-000000000000" FilterDefinitionId="WordprocessingML v. 2">
+      <SpecificTargetLanguages />
+      <LanguageFiles>
+        <LanguageFile Guid="d0ac5687-a2c6-4017-a8b5-2a0c4ec09cec" SettingsBundleGuid="bd4d7fe9-d197-468d-a467-709dd33683c5" LanguageCode="en-us">
+          <FileVersions>
+            <FileVersion Guid="dfde712b-06ad-4db6-92c7-b24ccba4f6df" VersionNumber="1" Size="33042" FileName="ppfcientificotecnica.docx" PhysicalPath="en-us\ppfcientificotecnica.docx" CreatedBy="DESKTOP-1DBG60K\migue" CreatedAt="2019-12-16T15:07:39.6096165Z" FileTimeStamp="2019-12-16T14:43:14.7864227Z" IsAutoUpload="false" />
+            <FileVersion Guid="0ce14320-525d-4cf1-af2c-c009cd061fa5" VersionNumber="2" Size="385169" FileName="ppfcientificotecnica.docx.sdlxliff" PhysicalPath="en-us\ppfcientificotecnica.docx.sdlxliff" Comment="" CreatedBy="DESKTOP-1DBG60K\migue" CreatedAt="2019-12-16T15:10:51.8093632Z" FileTimeStamp="2019-12-16T15:10:51.7385612Z" IsAutoUpload="false" />
+          </FileVersions>
+          <AnalysisStatistics WordCountStatus="None" AnalysisStatus="None">
+            <Total Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+            <Repetitions Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+            <Perfect Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+            <InContextExact Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+            <Exact Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+            <Fuzzy>
+              <CountData Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+              <CountData Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+              <CountData Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+              <CountData Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+            </Fuzzy>
+            <New Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+            <NewBaseline Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+            <NewLearnings Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+            <Locked Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+          </AnalysisStatistics>
+          <ChildFiles />
+        </LanguageFile>
+        <LanguageFile Guid="4ceecfb0-e599-4046-a042-96b2988a0e8c" SettingsBundleGuid="fa910161-ce97-46c5-ab84-0edc0d51db74" LanguageCode="es-x-mo-SDL">
+          <FileVersions>
+            <FileVersion Guid="5fbb0c51-6673-47a6-b2b8-f7ef028172ed" VersionNumber="3" Size="385169" FileName="ppfcientificotecnica.docx.sdlxliff" PhysicalPath="es-x-mo-SDL\ppfcientificotecnica.docx.sdlxliff" CreatedBy="DESKTOP-1DBG60K\migue" CreatedAt="2019-12-16T15:10:51.815353Z" FileTimeStamp="2019-12-16T15:10:51.7385612Z" IsAutoUpload="false" />
+            <FileVersion Guid="58d539b3-5771-4f5b-bfde-18e3d0d3c41d" VersionNumber="4" Size="428567" FileName="ppfcientificotecnica.docx.sdlxliff" PhysicalPath="es-x-mo-SDL\ppfcientificotecnica.docx.sdlxliff" Comment="Created by 'Aplicar PerfectMatch+Pretraducir archivos+Analizar archivos'" CreatedBy="DESKTOP-1DBG60K\migue" CreatedAt="2019-12-16T15:10:59.2126337Z" FileTimeStamp="2019-12-16T15:10:59.1381027Z" IsAutoUpload="false" />
+          </FileVersions>
+          <AnalysisStatistics WordCountFileTimeStamp="2019-12-16T15:10:59.1381027Z" WordCountStatus="Complete" AnalysisFileTimeStamp="2019-12-16T15:10:59.1381027Z" AnalysisStatus="Complete">
+            <Total Words="5251" Characters="29156" Segments="377" Placeables="288" Tags="40" />
+            <Repetitions Words="176" Characters="902" Segments="40" Placeables="22" Tags="0" />
+            <Perfect Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+            <InContextExact Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+            <Exact Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+            <Fuzzy>
+              <CountData Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+              <CountData Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+              <CountData Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+              <CountData Words="3" Characters="45" Segments="3" Placeables="3" Tags="0" />
+            </Fuzzy>
+            <New Words="5072" Characters="28209" Segments="334" Placeables="263" Tags="40" />
+            <NewBaseline Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+            <NewLearnings Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+            <Locked Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+          </AnalysisStatistics>
+          <ConfirmationStatistics FileTimeStamp="2019-12-18T17:50:58.2724613Z" Status="Complete">
+            <Unspecified Words="5049" Characters="29153" Segments="377" Placeables="428" Tags="40" />
+            <Draft Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+            <Translated Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+            <RejectedTranslation Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+            <ApprovedTranslation Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+            <RejectedSignOff Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+            <ApprovedSignOff Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+          </ConfirmationStatistics>
+          <ChildFiles />
+        </LanguageFile>
+      </LanguageFiles>
+      <PreviousBilingualFiles />
+    </ProjectFile>
+  </ProjectFiles>
+  <Tasks>
+    <AutomaticTask Guid="f22dcb24-cd6b-44d7-ba41-91d65472a8e6" Status="Completed" CompletedAt="2019-12-16T15:07:40.044764Z" PercentComplete="100" CreatedAt="2019-12-16T15:07:39.6096165Z" PredecessorTaskGuid="00000000-0000-0000-0000-000000000000" StartedAt="2019-12-16T15:07:39.6136091Z" CreatedBy="DESKTOP-1DBG60K\migue">
+      <TaskTemplateIds>
+        <TaskTemplateId>Sdl.ProjectApi.AutomaticTasks.Scan</TaskTemplateId>
+      </TaskTemplateIds>
+      <Files>
+        <TaskFile Guid="b7946a12-13ad-4a2b-b5d4-93b307bf5360" Completed="true" ParentTaskFileGuid="00000000-0000-0000-0000-000000000000" LanguageFileGuid="d0ac5687-a2c6-4017-a8b5-2a0c4ec09cec" Purpose="WorkFile">
+          <Result Guid="00000000-0000-0000-0000-000000000000" />
+        </TaskFile>
+      </Files>
+      <OutputFiles>
+        <OutputFile LanguageFileGuid="d0ac5687-a2c6-4017-a8b5-2a0c4ec09cec" Purpose="WorkFile" />
+      </OutputFiles>
+      <Reports />
+      <Parameters />
+      <Result Guid="00000000-0000-0000-0000-000000000000" />
+    </AutomaticTask>
+    <AutomaticTask Guid="5b1a6f1b-f7c7-4b7d-9e89-7e6df23d348e" Status="Completed" CompletedAt="2019-12-16T15:10:51.8103648Z" ComplexTaskTemplateId="Sdl.ProjectApi.AutomaticTask.Prepare.NoProjectTM" PercentComplete="100" CreatedAt="2019-12-16T15:10:48.9579993Z" PredecessorTaskGuid="00000000-0000-0000-0000-000000000000" StartedAt="2019-12-16T15:10:49.018908Z" CreatedBy="DESKTOP-1DBG60K\migue">
+      <TaskTemplateIds>
+        <TaskTemplateId>Sdl.ProjectApi.AutomaticTasks.Conversion</TaskTemplateId>
+      </TaskTemplateIds>
+      <Files>
+        <TaskFile Guid="42353de0-1e6b-4038-b8cf-0d248827c40b" Completed="true" ParentTaskFileGuid="00000000-0000-0000-0000-000000000000" LanguageFileGuid="d0ac5687-a2c6-4017-a8b5-2a0c4ec09cec" Purpose="WorkFile">
+          <Result Guid="00000000-0000-0000-0000-000000000000" />
+        </TaskFile>
+      </Files>
+      <OutputFiles>
+        <OutputFile LanguageFileGuid="d0ac5687-a2c6-4017-a8b5-2a0c4ec09cec" Purpose="WorkFile" />
+      </OutputFiles>
+      <Reports />
+      <Parameters />
+      <Result Guid="00000000-0000-0000-0000-000000000000" />
+    </AutomaticTask>
+    <AutomaticTask Guid="4f36a04f-72da-4823-8ba7-ad42d9430acf" Status="Completed" CompletedAt="2019-12-16T15:10:51.8263391Z" ComplexTaskTemplateId="Sdl.ProjectApi.AutomaticTask.Prepare.NoProjectTM" PercentComplete="100" CreatedAt="2019-12-16T15:10:48.9579993Z" PredecessorTaskGuid="5b1a6f1b-f7c7-4b7d-9e89-7e6df23d348e" StartedAt="2019-12-16T15:10:51.815353Z" CreatedBy="DESKTOP-1DBG60K\migue">
+      <TaskTemplateIds>
+        <TaskTemplateId>Sdl.ProjectApi.AutomaticTasks.Split</TaskTemplateId>
+      </TaskTemplateIds>
+      <Files>
+        <TaskFile Guid="13d8fcc8-e694-491e-9fd9-379b7e62d240" Completed="true" ParentTaskFileGuid="00000000-0000-0000-0000-000000000000" LanguageFileGuid="d0ac5687-a2c6-4017-a8b5-2a0c4ec09cec" Purpose="WorkFile">
+          <Result Guid="00000000-0000-0000-0000-000000000000" />
+        </TaskFile>
+      </Files>
+      <OutputFiles>
+        <OutputFile LanguageFileGuid="4ceecfb0-e599-4046-a042-96b2988a0e8c" Purpose="WorkFile" />
+      </OutputFiles>
+      <Reports />
+      <Parameters />
+      <Result Guid="00000000-0000-0000-0000-000000000000" />
+    </AutomaticTask>
+    <AutomaticTask Guid="fbc0f6cd-686d-4325-9a0f-e7a621ecf4af" Status="Completed" CompletedAt="2019-12-16T15:10:59.2735409Z" ComplexTaskTemplateId="Sdl.ProjectApi.AutomaticTask.Prepare.NoProjectTM" PercentComplete="100" CreatedAt="2019-12-16T15:10:48.9579993Z" PredecessorTaskGuid="4f36a04f-72da-4823-8ba7-ad42d9430acf" StartedAt="2019-12-16T15:10:51.8323333Z" CreatedBy="DESKTOP-1DBG60K\migue">
+      <TaskTemplateIds>
+        <TaskTemplateId>Sdl.ProjectApi.AutomaticTasks.PerfectMatch</TaskTemplateId>
+        <TaskTemplateId>Sdl.ProjectApi.AutomaticTasks.Translate</TaskTemplateId>
+        <TaskTemplateId>Sdl.ProjectApi.AutomaticTasks.Analysis</TaskTemplateId>
+      </TaskTemplateIds>
+      <Files>
+        <TaskFile Guid="58791081-cd84-4271-9a9d-3f7a1235372c" Completed="true" ParentTaskFileGuid="00000000-0000-0000-0000-000000000000" LanguageFileGuid="4ceecfb0-e599-4046-a042-96b2988a0e8c" Purpose="WorkFile">
+          <Result Guid="00000000-0000-0000-0000-000000000000" />
+        </TaskFile>
+      </Files>
+      <OutputFiles>
+        <OutputFile LanguageFileGuid="4ceecfb0-e599-4046-a042-96b2988a0e8c" Purpose="WorkFile" />
+      </OutputFiles>
+      <Reports>
+        <Report Guid="a3ec1edf-6f85-4af3-a20d-7ef7bb3c2891" Name="Informe de pretraducción de archivos" Description="Resultados de aplicar las memorias de traducción a los archivos." TaskTemplateId="Sdl.ProjectApi.AutomaticTasks.Translate" LanguageDirectionGuid="fb1ba21a-f25e-4826-a047-488680ab601a" PhysicalPath="Reports\Pretraducir archivos en-us_es-x-mo-SDL.xml" />
+        <Report Guid="1d5d0d72-bb35-4b62-a891-66553482950f" Name="Informe de análisis de archivos" Description="Las estadísticas muestran el aprovechamiento esperado de la aplicación de las memorias de traducción." TaskTemplateId="Sdl.ProjectApi.AutomaticTasks.Analysis" LanguageDirectionGuid="fb1ba21a-f25e-4826-a047-488680ab601a" PhysicalPath="Reports\Analizar archivos en-us_es-x-mo-SDL.xml" />
+      </Reports>
+      <Parameters />
+      <Result Guid="00000000-0000-0000-0000-000000000000" />
+    </AutomaticTask>
+  </Tasks>
+  <PackageOperations>
+    <ProjectPackageCreationOperations />
+    <ProjectPackageImportOperations />
+    <ReturnPackageCreationOperations />
+    <ReturnPackageImportOperations />
+  </PackageOperations>
+</Project>
